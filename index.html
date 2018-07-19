@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Photo Gallery</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header>
+		<nav class="nav">
+			<div class="container">
+				<h1>Logo</h1>
+				<ul class="main_nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#gallery">Gallery</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<div class="hamburger_menu">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+			</div>
+		</nav>
+		<div id="navigation" class="responsive_nav">
+			<ul class="responsive_nav_ul">
+				<li><a href="#">Home</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<h2>Photo Gallery App</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum doloribus, magni in unde quae libero, ab ea modi est hic.</p>
+			<section id="gallery">
+				<h3>Gallery</h3>
+				<div class="gallery_cards">
+					<div class="gallery_card">
+						<img src="img/1.jpeg" alt="photo gallery picture">
+					</div>
+					<div class="gallery_card">
+						<img src="img/2.jpeg" alt="photo gallery picture">
+					</div>
+					<div class="gallery_card">
+						<img src="img/3.jpeg" alt="photo gallery picture">
+					</div>
+					<div class="gallery_card">
+						<img src="img/4.jpeg" alt="photo gallery picture">
+					</div>
+					<div class="gallery_card">
+						<img src="img/5.jpeg" alt="photo gallery picture">
+					</div>
+					<div class="gallery_card">
+						<img src="img/6.jpeg" alt="photo gallery picture">
+					</div>
+				</div>
+			</section>
+			<section id="about">
+				<h3>About Us</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ut, quisquam ratione fugit, odio quo perferendis labore omnis assumenda asperiores nulla tempora harum voluptatibus magni dolorum architecto dolorem, molestias ad? Alias velit quia dolores rem laudantium architecto magni aspernatur, veritatis est obcaecati harum ex odit, ut autem deleniti quasi asperiores tempore quisquam illo. Quo at quia tempore consectetur repellat porro.</p>
+			</section>
+			<section id="contact">
+				<h3>Contact Us</h3>
+				<p><strong>Address: </strong>
+				<address>
+					149, Lorem Street<br>
+					ipsum, dolor<br>
+					sit amet - 150
+				</address></p>
+				<p><strong>Email: </strong> loremipsum@ipsum.net</p>
+				<p><strong>Phone: </strong> 555-222</p>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			<p><small>&copy; Copyright 2018, All Rights Reserved</small></p>
+		</div>
+	</footer>
+	<script>
+		const navigation = document.getElementById('navigation');
+		const responsiveNav = document.querySelector('.responsive_nav');
+		const responsiveNavDisplay = document.querySelector('.responsive_nav_display');
+		const menu = document.querySelector('.hamburger_menu');
+
+		menu.addEventListener('click', () => {
+			if ( navigation.className == 'responsive_nav') {
+				navigation.className == 'responsive_nav_display';
+			} else if (navigation.className == 'responsive_nav') {
+				navigation.className == 'responsive_nav_display';
+			}
+		});
+	</script>
+</body>
+</html>
